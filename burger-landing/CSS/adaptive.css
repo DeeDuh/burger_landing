@@ -10,6 +10,8 @@
 }
 .header{
     justify-content: space-between;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
 }
 } 
 
@@ -27,18 +29,19 @@ p{
 }
 .common-title {
     padding-top: 100px;
-    padding-top: 100px;
 }
 .why{
     padding-bottom: 100px;
 }
 .products-items {
+    -ms-grid-columns: 384px 24px 384px;
     grid-template-columns: repeat(2, 384px);
     gap: 24px;
     padding-top: 60px;
     padding-left: 100px;
 }
 .why-items {
+    -ms-grid-columns: 312px 50px 312px 50px 312px;
     grid-template-columns: repeat(3, 312px);
     margin-top: 10px;
     gap: 50px;
@@ -65,6 +68,7 @@ p{
     padding-left: 10px;
 }
 .why-items {
+    -ms-grid-columns: 312px;
     grid-template-columns: repeat(1, 312px);
     margin-top: 40px;
     gap: 30px;
@@ -97,6 +101,7 @@ p{
     padding-bottom: 100px;
 }
 .products-items {
+    -ms-grid-columns: 375px 0px 375px;
     grid-template-columns: repeat(2, 375px);
     gap: 0px;
     padding-top: 60px;
@@ -118,12 +123,15 @@ p{
 }
 } 
 /*********************425*************************/
+@media only screen and (max-width: 425px){
 .main, .why, .products, .order, .footer {
     padding-right: 5px;
     padding-left: 5px;
-}
-@media only screen and (max-width: 425px){
+}    
 .header .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
     flex-direction: column;
     margin-top: 10px;
 }
@@ -135,6 +143,7 @@ p{
     margin-left: 10px;
 }
 .why-items {
+    -ms-grid-columns: 312px;
     grid-template-columns: repeat(1, 312px);
     margin-top: 40px;
     gap: 30px;
@@ -148,6 +157,9 @@ p{
     margin-top: 60px;
 }
 .menu{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
     margin-left: 5px;
     flex-direction: column;
     max-width: 420px;
@@ -168,7 +180,8 @@ p{
     margin-left: 10px;
 }
 .products-items {
-    grid-template-columns: repeat(1, 400px);
+    -ms-grid-columns: 375px;
+    grid-template-columns: repeat(1, 375px);
     gap: 0px;
     padding-top: 60px;
     padding-left: 10px;
@@ -232,3 +245,4 @@ p{
     padding-bottom: 50px;
 }
 }
+
