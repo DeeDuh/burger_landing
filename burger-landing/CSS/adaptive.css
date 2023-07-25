@@ -1,0 +1,234 @@
+@media only screen and (min-width: 1920px){
+.main, .why, .order{
+    background-size: cover; /*позволит заполнить всю область блока картинкой без повторения*/
+}
+}
+@media only screen and (max-width: 1199px){
+.main, why, .products, .order, .footer{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.header{
+    justify-content: space-between;
+}
+} 
+
+@media only screen and (max-width: 1024px){
+.main, .why, .products, .order, .footer{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.main-title {
+    font-size: 50px;
+    padding-top: 27px;
+}
+p{
+    width: 400px;
+}
+.common-title {
+    padding-top: 100px;
+    padding-top: 100px;
+}
+.why{
+    padding-bottom: 100px;
+}
+.products-items {
+    grid-template-columns: repeat(2, 384px);
+    gap: 24px;
+    padding-top: 60px;
+    padding-left: 100px;
+}
+.why-items {
+    grid-template-columns: repeat(3, 312px);
+    margin-top: 10px;
+    gap: 50px;
+}
+.why-item-text {
+    font-size: 19px;
+    width: 280px;
+}
+.common-title {
+    font-size: 44px;
+}
+.order-form-input {
+    width: 250px;
+} 
+
+.footer .container {
+    max-width: 500px;
+}
+} 
+
+@media only screen and (max-width: 768px){
+.main, .why, .products, .order, .footer {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.why-items {
+    grid-template-columns: repeat(1, 312px);
+    margin-top: 40px;
+    gap: 30px;
+}
+.products-items {
+    padding-left: 0px;
+}
+.order-form {
+    padding: 40px 10px;
+    margin-left: 440px;
+    margin-top: 60px;
+}
+.menu{
+    margin-left: 40px;
+}
+.main-title {
+    font-size: 50px;
+    padding-top: 27px;
+}
+.main-image {
+    position: absolute;
+    top: 5px;
+    width: 700px;
+    left: 200px;
+}
+p{
+    width: 400px;
+}
+.why{
+    padding-bottom: 100px;
+}
+.products-items {
+    grid-template-columns: repeat(2, 375px);
+    gap: 0px;
+    padding-top: 60px;
+    padding-left: 0px;
+    margin-left: 0;
+}
+.products-item {
+    padding: 20px;
+}
+.why-item-text {
+    font-size: 19px;
+    width: 280px;
+}
+.common-title {
+    font-size: 44px;
+}
+.order-form-input {
+    width: 250px;
+}
+} 
+/*********************425*************************/
+.main, .why, .products, .order, .footer {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+@media only screen and (max-width: 425px){
+.header .container {
+    flex-direction: column;
+    margin-top: 10px;
+}
+.logo{
+    padding-bottom: 20px;
+}
+.menu-item{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.why-items {
+    grid-template-columns: repeat(1, 312px);
+    margin-top: 40px;
+    gap: 30px;
+}
+.products-items {
+    padding-left: 0px;
+}
+.order-form {
+    padding: 40px 10px;
+    margin-left: 440px;
+    margin-top: 60px;
+}
+.menu{
+    margin-left: 5px;
+    flex-direction: column;
+    max-width: 420px;
+}
+.main-title {
+    font-size: 50px;
+    margin-left: 10px;
+    padding-top: 27px;
+}
+.main-image {
+    position: absolute;
+    top: 5px;
+    width: 300px;
+    left: 150px;
+}
+p{
+    width: 400px;
+    margin-left: 10px;
+}
+.products-items {
+    grid-template-columns: repeat(1, 400px);
+    gap: 0px;
+    padding-top: 60px;
+    padding-left: 10px;
+}
+.why-item-text {
+    font-size: 19px;
+    width: 280px;
+}
+.common-title {
+    font-size: 44px;
+}
+.order-form{
+    margin-left: 40px;
+    width: 340px;
+}
+.order-form-input {
+    width: 300px;
+}
+.order-form-text {
+    width: 300px;
+    line-height: 20px;
+}
+#order-action{
+    margin-left: 20px;
+}
+.main-content {
+    padding-top: 3px;
+    padding-bottom: 100px;
+}
+.order-image {
+    display:none; /*убираем картинку с экрана*/
+}
+.footer .container {
+    max-width: 400px;
+}
+}
+/**********************325px************************/
+@media only screen and (max-width: 375px){
+.main, .why, .products, .order, .footer {
+    padding-right: 3px;
+    padding-left: 0px;
+}
+.container {
+    max-width: 350px;
+    margin: 0;
+}
+.products{
+    padding-bottom: 50px;
+}
+.products-item {
+    padding: 0px;
+}
+.order-form {
+    padding: 20px 10px;
+    margin-left: 20px;
+}
+.common-title {
+    padding-top: 0px;
+}
+.order{
+    padding-bottom: 50px;
+}
+}
